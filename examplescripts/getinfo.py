@@ -3,6 +3,8 @@ import pprint
 import sys
 from apiclient.discovery import build
 
+# see https://developers.google.com/drive/api/reference/rest/v2/files/list
+
 def printChildren(parent):
   param = {"q": "'" + parent + "' in parents and mimeType != 'application/vnd.google-apps.folder'"}
   result = service.files().list(**param).execute()
@@ -14,7 +16,7 @@ def printChildren(parent):
     print('File {}'.format(afile.get('kind')))
     print('File {}'.format(afile))
 
-API_KEY = 'AIzaSyCucOfLw-ATt1nTYx3ScX_tUevXm1whyDg' # get from API->Credentials page in console.cloud.googl.com
-FOLDER_ID = '1J9alevdVDUAWaFsKbgdRcAX860FFjJ1b' # NOTE: folder must be publicly visible when using an API key.
+API_KEY = 'CHANGEME' # get from API->Credentials page in console.cloud.googl.com
+FOLDER_ID = 'CHANGEME' # NOTE: folder must be publicly visible when using an API key.
 service = build('drive', 'v3', developerKey=API_KEY)
 printChildren(FOLDER_ID)
