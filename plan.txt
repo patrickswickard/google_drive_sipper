@@ -9,3 +9,9 @@ pip3 install gdown
 typical usage:
 
 gdown --fuzzy https://drive.google.com/file/d/1PvDiL1QjdjDqXvTG33E7KkHiw2it8aM2/view?usp=share_link -O myfilename_whatever_I_want.pdf
+
+Google drive api documentation is...not terribly intuitive.
+
+https://developers.google.com/drive/api/reference/rest/v3/revisions/list
+
+calling this with a fileId set to an appropriate value will actually list the "last modified" date...
