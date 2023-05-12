@@ -14,4 +14,4 @@ Google drive api documentation is...not terribly intuitive.
 
 https://developers.google.com/drive/api/reference/rest/v3/revisions/list
 
-calling this with a fileId set to an appropriate value will actually list the "last modified" date...
+calling this with a fileId set to an appropriate value will actually list the "last modified" date...however this appears to only work on files in currently authenticated user's drive, not other files publicly shared
