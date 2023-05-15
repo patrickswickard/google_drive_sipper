@@ -10,3 +10,9 @@ Some of the issues:
 DJ is on a Windows machine so solution should be portable to Windows environment.  It would also be good if the solution were simple enough not to involve a lot of additional softawre to update and maintain.
 
 File structure on shared drive is irregular and eclectic.  Different contributors have the actual files at different depths within different subfolder structures.  Script should also be flexible enough to anticipate future changes, different contributors, restructures, etc.
+
+UPDATE
+
+Google Drive API is a radioactive disaster for the use case we are trying to solve.
+
+Stupid hacky solution works and may be generally applicable to similar use cases for data gathering...
